@@ -1,0 +1,22 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+main{
+    min-height: 90vh;
+}
+.nav-link, .navbar-brand{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.return-policy, .terms, .privacy-policy, .return-fund{
+    padding: 0 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: capitalize;
+    text-decoration: none;
+
+}
+
+a{
+    text-decoration: none;
+}
+
