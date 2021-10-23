@@ -1,15 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 body{
     font-family: 'Inconsolata', monospace;
+    background: #fafafa;
    
 }
 main{
     min-height: 90vh;
 }
 
-.navbar{box-shadow: 0 0 10px red;}
-.nav-link, .navbar-brand{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+/* .navbar{box-shadow: 0 0 10px red;} */
+.nav-link, .navbar-brand, .store{
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Oswald', sans-serif;
+    color: #fff !important;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+}
+
+.myaccount{
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .return-policy, .terms, .privacy-policy, .return-fund{
@@ -47,6 +57,33 @@ button{
 
 }
 
-.product-detail{
-    background: linear-gradient(to top right, rgba(0, 0, 0, .9), rgba(0, 0, 0, .4), rgba(46, 38, 156, 0.6), red);
+
+.search-input{
+    border-radius: 5rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.crt-item{
+    display: flex;
+    flex-direction: column;
+    margin-top: .5rem;
+
+}
+
+.nav-link .qty{
+    display: block;
+    position: absolute;
+    margin-top: -1rem;
+}
+
+.logo-img{
+    width: 7rem;
+    height: 7rem;
+}
+
+
+.right-border{
+    border-right: 2px #eee solid;
 }

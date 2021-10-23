@@ -15,15 +15,24 @@
 
 <body>
     <main role="main">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary py-3">
             <div class="container">
-                <a class="navbar-brand" href="#">Home</a>
+                <a class="navbar-brand" href="#">
+                    <span class="fa fa-globe"></span>
+                    <strong>PreShop</strong>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link disabled" href="#">|</a>
+                        <a class="nav-link myaccount" href="#">
+                            <strong>My Account</strong>
+                        </a>
+                    </div>
                     <div class="navbar-nav ms-auto">
                         <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
                         <a class="nav-link" href="#"><span class="fa fa-sign-in-alt mt-1"></span>
@@ -34,9 +43,9 @@
                             Sign up
                         </a>
                         <a class="nav-link disabled" href="#">|</a>
-                        <a class="nav-link" href="#">
+                        <a class="nav-link crt-item" href="#">
+                            <span class='text-danger qty ms-2'>3</span>
                             <i class="fas fa-cart-plus"></i>
-                            <span class='text-danger'>0</span>
                         </a>
                     </div>
                 </div>
@@ -53,13 +62,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/hero.jpg" class="d-block w-100" alt="...">
+                    <img src="img/hero.jpg" class="d-block w-100" alt="..." style="height: 70vh;">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/hero.jpg" class="d-block w-100" alt="...">
+                    <img src="img/hero.jpg" class="d-block w-100" alt="..." style="height: 70vh;">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/hero.jpg" class="d-block w-100" alt="...">
+                    <img src="img/hero.jpg" class="d-block w-100" alt="..." style="height: 70vh;">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -73,149 +82,201 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div class="container">
-            <div class="row my-2">
-                <div class="col-md-9">
-                    <div class="card">
-                        <div class="card-body">
-                            <table class="table table-bordered">
-                                <thead>
-                                    <th>#</th>
-                                    <th>Product</th>
-                                    <th>Quantity</th>
-                                    <th>Price</th>
-                                    <th></th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <h4>1</h4>
-                                        </td>
-                                        <td>
-                                            <img src="img/1.jpg" alt="" width="40px">
-                                            <small>blue t-shirt</small>
-                                        </td>
-                                        <td style="width: 20px;">
-                                            <form action="" class='input-group-text'>
-                                                <a href="#" class="form-control"><span class="fa fa-minus"></span></a>
+        <div class="cart">
+            <div class="container">
+                <div class="row my-2">
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <table class="table table-bordered borderless">
+                                    <thead>
+                                        <th>#</th>
+                                        <th>Product</th>
+                                        <th>Quantity</th>
+                                        <th>Price</th>
+                                        <th></th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <h4 class="text-center">1</h4>
+                                            </td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-md-2">
+                                                        <img src="img/11.jpg" alt="" width="40px">
 
-                                                <a href="" style='text-align: center;' class="form-control">3</a>
-                                                <a href="#"><span class="fa fa-plus form-control"></span></a>
-                                            </form>
-                                        </td>
-                                        <td>
-                                            <span style='display: block;' class="mt-2">
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <b>Camera 4k</b><br>
+                                                        <small><strong>Color:</strong> Black,
+                                                            <strong>Size:</strong> Medium</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td style="width: 20px;">
+                                                <form action="" class='input-group-text'>
+                                                    <a href="#" class="form-control"><span
+                                                            class="fa fa-minus"></span></a>
 
-                                                <b>$200</b>
-                                            </span>
-                                        </td>
-                                        <td><span class="fa fa-trash text-danger mt-3"></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <h4>1</h4>
-                                        </td>
-                                        <td>
-                                            <img src="img/1.jpg" alt="" width="40px">
-                                            <small>blue t-shirt</small>
-                                        </td>
-                                        <td style="width: 20px;">
-                                            <form action="" class='input-group-text'>
-                                                <a href="#" class="form-control"><span class="fa fa-minus"></span></a>
+                                                    <a href="" style='text-align: center;' class="form-control">3</a>
+                                                    <a href="#"><span class="fa fa-plus form-control"></span></a>
+                                                </form>
+                                            </td>
+                                            <td>
+                                                <span style='display: block;' class="mt-2">
 
-                                                <a href="" style='text-align: center;' class="form-control">3</a>
-                                                <a href="#"><span class="fa fa-plus form-control"></span></a>
-                                            </form>
-                                        </td>
-                                        <td>
-                                            <span style='display: block;' class="mt-2">
+                                                    <b>$200</b>
+                                                </span>
+                                            </td>
+                                            <td><span class="fa fa-trash text-danger mt-3"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h4 class="text-center">2</h4>
+                                            </td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-md-2">
+                                                        <img src="img/4.jpg" alt="" width="40px">
 
-                                                <b>$200</b>
-                                            </span>
-                                        </td>
-                                        <td><span class="fa fa-trash text-danger mt-3"></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <h4>1</h4>
-                                        </td>
-                                        <td>
-                                            <img src="img/1.jpg" alt="" width="40px">
-                                            <small>blue t-shirt</small>
-                                        </td>
-                                        <td style="width: 20px;">
-                                            <form action="" class='input-group-text'>
-                                                <a href="#" class="form-control"><span class="fa fa-minus"></span></a>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <b>Business Suitcase</b><br>
+                                                        <small><strong>Color:</strong> Green,
+                                                            <strong>Size:</strong> Large</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td style="width: 20px;">
+                                                <form action="" class='input-group-text'>
+                                                    <a href="#" class="form-control"><span
+                                                            class="fa fa-minus"></span></a>
 
-                                                <a href="" style='text-align: center;' class="form-control">3</a>
-                                                <a href="#"><span class="fa fa-plus form-control"></span></a>
-                                            </form>
-                                        </td>
-                                        <td>
-                                            <span style='display: block;' class="mt-2">
+                                                    <a href="" style='text-align: center;' class="form-control">3</a>
+                                                    <a href="#"><span
+                                                            class="fa fa-plus form-control text-center"></span></a>
+                                                </form>
+                                            </td>
+                                            <td>
+                                                <span style='display: block;' class="mt-2">
 
-                                                <b>$200</b>
-                                            </span>
-                                        </td>
-                                        <td><span class="fa fa-trash text-danger mt-3"></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <h4>1</h4>
-                                        </td>
-                                        <td>
-                                            <img src="img/1.jpg" alt="" width="40px">
-                                            <small>blue t-shirt</small>
-                                        </td>
-                                        <td style="width: 20px;">
-                                            <form action="" class='input-group-text'>
-                                                <a href="#" class="form-control"><span class="fa fa-minus"></span></a>
+                                                    <b>$200</b>
+                                                </span>
+                                            </td>
+                                            <td><span class="fa fa-trash text-danger mt-3"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h4 class="text-center">3</h4>
+                                            </td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-md-2">
+                                                        <img src="img/1.jpg" alt="" width="40px">
 
-                                                <a href="" style='text-align: center;' class="form-control">3</a>
-                                                <a href="#"><span class="fa fa-plus form-control"></span></a>
-                                            </form>
-                                        </td>
-                                        <td>
-                                            <span style='display: block;' class="mt-2">
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <b>Blue t-shirt</b><br>
+                                                        <small><strong>Color:</strong> Blue,
+                                                            <strong>Size:</strong> Medium</small>
+                                                    </div>
+                                                </div>
 
-                                                <b>$200</b>
-                                            </span>
-                                        </td>
-                                        <td><span class="fa fa-trash text-danger mt-3"></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <h4>1</h4>
-                                        </td>
-                                        <td>
-                                            <img src="img/1.jpg" alt="" width="40px">
-                                            <small>blue t-shirt</small>
-                                        </td>
-                                        <td style="width: 20px;">
-                                            <form action="" class='input-group-text'>
-                                                <a href="#" class="form-control"><span class="fa fa-minus"></span></a>
+                                            </td>
+                                            <td style="width: 20px;">
+                                                <form action="" class='input-group-text'>
+                                                    <a href="#" class="form-control"><span
+                                                            class="fa fa-minus"></span></a>
 
-                                                <a href="" style='text-align: center;' class="form-control">3</a>
-                                                <a href="#"><span class="fa fa-plus form-control"></span></a>
-                                            </form>
-                                        </td>
-                                        <td>
-                                            <span style='display: block;' class="mt-2">
+                                                    <a href="" style='text-align: center;' class="form-control">3</a>
+                                                    <a href="#"><span class="fa fa-plus form-control"></span></a>
+                                                </form>
+                                            </td>
+                                            <td>
+                                                <span style='display: block;' class="mt-2">
 
-                                                <b>$200</b>
-                                            </span>
-                                        </td>
-                                        <td><span class="fa fa-trash text-danger mt-3"></span></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                                    <b>$200</b>
+                                                </span>
+                                            </td>
+                                            <td><span class="fa fa-trash text-danger mt-3"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h4 class="text-center">4</h4>
+                                            </td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-md-2">
+                                                        <img src="img/1.jpg" alt="" width="40px">
+
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <b>Blue t-shirt</b><br>
+                                                        <small><strong>Color:</strong> Blue,
+                                                            <strong>Size:</strong> Medium</small>
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                            <td style="width: 20px;">
+                                                <form action="" class='input-group-text'>
+                                                    <a href="#" class="form-control"><span
+                                                            class="fa fa-minus"></span></a>
+
+                                                    <a href="" style='text-align: center;' class="form-control">3</a>
+                                                    <a href="#"><span class="fa fa-plus form-control"></span></a>
+                                                </form>
+                                            </td>
+                                            <td>
+                                                <span style='display: block;' class="mt-2">
+
+                                                    <b>$200</b>
+                                                </span>
+                                            </td>
+                                            <td><span class="fa fa-trash text-danger mt-3"></span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <table class="table table-bordere">
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>total price</strong></td>
+                                            <td>$99.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Discount</strong></td>
+                                            <td>$11</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Taxes</strong></td>
+                                            <td>$.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>total</strong></td>
+                                            <td>$89.98</td>
+                                        </tr>
 
+                                    </tbody>
+                                </table>
+                                <p class="text-center">
+                                    <img src="img/payment-card.png" alt="">
+                                </p>
+                                <div class="d-grid">
+
+                                    <a href="checkout.html" class="btn btn-primary">Checkout</a>
+                                </div>
+                                <div class="d-grid mt-1">
+
+                                    <a href="index.html" class="btn btn-dark text-center">Continue Shopping</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
